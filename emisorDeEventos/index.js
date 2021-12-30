@@ -11,11 +11,11 @@ manejador.on('despedida', function(nombre){
 });
 
 
-manejador.emit('saludo', "Manuel");
+manejador.emit('saludo', "hola");
 
 setInterval(function(){
     manejador.emit('saludo',"Manuel");
-},1000);
+},2000);
 setInterval(function(){
     manejador.emit('despedida',"Manuel");
 },1000);
